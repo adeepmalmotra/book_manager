@@ -1,4 +1,8 @@
+asyncpg
 fastapi
+httpx
+pydantic
 pytest
 python-dotenv
+sqlalchemy[asyncio]
 uvicorn
