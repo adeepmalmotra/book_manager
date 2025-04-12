@@ -1,3 +1,6 @@
+"""
+Handles creation of async engine and session factory for DB communication.
+"""
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from app.core.config import settings
 

@@ -1,7 +1,11 @@
+"""
+SQLAlchemy ORM model for Review.
+"""
 from sqlalchemy import Integer, Text, ForeignKey, Column
 from app.db.base import Base
 
-class Review(Base):
+class Review(Base):#pylint: disable=too-few-public-methods
+    """Review table linked to a specific book via book_id."""
     __tablename__ = "reviews"
 
     id = Column(Integer, primary_key=True, index=True)

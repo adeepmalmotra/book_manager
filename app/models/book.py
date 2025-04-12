@@ -1,7 +1,11 @@
+"""
+SQLAlchemy ORM model for Book.
+"""
 from sqlalchemy import String, Integer, Text, Column
 from app.db.base import Base
 
-class Book(Base):
+class Book(Base):#pylint: disable=too-few-public-methods
+    """Book table with basic metadata and summary."""
     __tablename__ = "books"
 
     id = Column(Integer, primary_key=True, index=True)
